@@ -37,22 +37,10 @@ A GitHub Actions workflow (`.github/workflows/ci-cd.yml`) runs automatically on 
    with the `latest` and run-number tags
 
 ## Run and Deploy
-Run locally:
-    docker compose up --build
-Deploy from Docker Hub:
-    docker pull <nimratariq5436>/todo-frontend:latest
-    docker pull <nimratariq5436>/todo-backend:latest
-Setup: add `DOCKERHUB_USERNAME` and `DOCKERHUB_TOKEN` under Settings → Secrets and variables → Actions, then push to `main`.
-
-## Changelog
-- **2026-11-26:** Added GitHub Actions CI/CD workflow (build, test, push to Docker Hub)
-- **2026-11-26:** Added CI/CD description, run/deploy instructions and changelog to README
-
-## Run and Deploy
 - Run locally: `docker compose up --build`
 - Add GitHub Secrets: `DOCKERHUB_USERNAME` and `DOCKERHUB_TOKEN`
 - Push to `main`, and the pipeline builds and pushes the images automatically
 
 ## Changelog
-- **2026-11-05:** Added GitHub Actions CI/CD workflow (build, test, push to Docker Hub)
-- **2026-11-05:** Added CI/CD description and instructions to README
+- **2026-11-26:** Added GitHub Actions CI/CD workflow (build, test, push to Docker Hub)
+- **2026-11-26:** Added CI/CD description, run/deploy instructions and changelog to README
